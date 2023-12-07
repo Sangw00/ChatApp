@@ -1,10 +1,10 @@
 import './App.css';
-import Signin from './components/Signin';
+import Card from './components/Auth/Card';
 
 function App() {
   return (
     <div className="App">
-      <Signin/>
+      <Card/>
       
     </div>
   );

@@ -2,29 +2,33 @@ body {
   text-align: center;
   background-color: #FCFDF8 ;
   background-size: 100%;
-  font-family: "cambo";
-  font-size: 15px;
+  /* font-family: "cambo"; */
+  font-size:25px ;
+  font-family:"buda";
 }
 .main{
   font-size: 30px;
   color: #296066;
+
+  
 }
 .sub{
   font-size: 27px;
 }
 
 img{
+padding-top: 50;
 width: 355px;
 height: 444px;
 }
 .card{
-  width: 750px;
-  height: 537px;
+  width: 720px;
+  height: 444;
   margin: 15% 35% 0 ;
-  display: grid;
+  /* display: grid;
   grid-template-rows:repeat(auto-fill,1fr);
   grid-template-columns: repeat(2,1fr);
-  gap:10px;
+  gap:10px; */
   align-content: center;
   border-radius: 20px;
   background: #F3F5EB;
@@ -34,4 +38,34 @@ height: 444px;
 }
 .button{
   background-color: #D1CD5B;
+  border-radius: 10px;
+  border: none;
+  width: 122px;
+  height: 40;
+}
+.form{
+padding-top: 10%;
+}
+.icon{
+  position:absolute;
+  left:0;
+  padding: 4px 10px 0px 35px;
+  font-size: 40px;
+  color: #296066
+  
+}
+input{
+  height:51px;
+  width: 295px;
+  border:1px solid #296066;
+  background-color: transparent;
+  border-radius: 10px;
+  padding-left: 50px;
+  font-weight: bold;
+
+
+}
+p {
+  color:#296066;
+  max-width: fit-content;
 }
