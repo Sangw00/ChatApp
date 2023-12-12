@@ -18,6 +18,8 @@ use App\Http\Controllers\UserController;
 
 Route::post('/register', [UserController::class, 'register']);
 Route::post('/login', [UserController::class, 'login']);
-Route::middleware(['auth:sanctum', 'verified'])->get('/user', function () {
+Route::get('/email/verify/{id}', [UserController::class, 'verify'])->name('verification.verify'); // Make sure to keep this as your route name
+// Route::get('/email/resend', )->name('verification.resend');
+/*Route::middleware(['auth:sanctum', 'verified'])->get('/user', function () {
   
-});
+}); */
