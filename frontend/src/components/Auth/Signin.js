@@ -1,9 +1,13 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUser, faLock } from "@fortawesome/free-solid-svg-icons";
+import { BrowserRouter, Routes, Route, Link} from "react-router-dom";
+import Signup from "./Signup";
+import Forgotpassword from "./Forgotpassword";
 
 export default function Signin() {
 
-  return <div>
+  return (
+  <BrowserRouter><div>
     <div className="main">Sign in</div>
     <form className="form ">
       <div className="input ">
@@ -17,11 +21,18 @@ export default function Signin() {
         <FontAwesomeIcon icon={faLock} className="icon" />
         <input type="password" className="" id="exampleInputPassword1" placeholder="**********" />
       </div>
-
-      <p>forgot password?</p>
-      <button type="submit" className="button">Submit</button>
-      <p>you don't have account?</p>
+      <p>forgot password? <Link className="link" to="/Forgotpassword">Reset password</Link></p>
+      <button type="submit" className="button">log in</button>
+      <p>you don't have account? <Link className="link" to="/Signup">Create one</Link></p>
+      
     </form>
-  </div>
 
+     
+      <Routes>
+      <Route path="/Forgotpassword" element={<Forgotpassword/>} >  </Route>
+      <Route path="/Signup" element={<Signup/>} >  </Route>
+      </Routes>
+    
+  </div>
+  </BrowserRouter>)
 }
