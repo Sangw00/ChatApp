@@ -1,10 +1,11 @@
 import './App.css';
-import Chat from './components/chat';
+
+import Card from './components/Auth/Card.js';
 
 function App() {
   return (
     <div className="App">
-      <Chat/>
+      <Card/>
       
     </div>
   );

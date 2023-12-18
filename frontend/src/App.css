@@ -16,7 +16,7 @@ body {
   font-size: 27px;
 }
 
-img{
+.logoimg{
 padding-top: 50;
 width: 355px;
 height: 444px;
@@ -64,8 +64,9 @@ input{
   background-color: transparent;
   border-radius: 10px;
   padding-left: 50px;
-  font-weight: bold;
+  font-weight: light;
   align-self: start;
+  : #e91e1e;
 
 }
 p {
@@ -86,9 +87,47 @@ p {
   background-color: #FCFDF8;
 }
 .search{
-  background-color: #296066
+  background-color: #296066;
+  height:55px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
+::placeholder{}
+/*
 .input{
   background-color: #FCFDF8;
   border-radius: 10px;
+  height: 38px;
+   margin-top: 10px;
 }
+.logo{
+  margin: 0%;
+  height: 150px;;
+  width: 333;
+}
+/**/
+
+    /* ===== Scrollbar CSS ===== */
+    /* Firefox */
+    .scroll-bar {
+      scrollbar-width: auto;
+      scrollbar-color: #0066ff #6e6464;
+    }
+
+    /* Chrome, Edge, and Safari */
+    *::-webkit-scrollbar {
+      width: 16px;
+    }
+
+    *::-webkit-scrollbar-track {
+      background: #6e6464;
+    }
+
+    *::-webkit-scrollbar-thumb {
+      background-color: #0066ff;
+      border-radius: 10px;
+      border: 3px solid #ffffff;
+    }
+  
+                

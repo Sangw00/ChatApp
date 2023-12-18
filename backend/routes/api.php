@@ -18,7 +18,7 @@ use App\Http\Controllers\UserController;
 
 Route::post('/register', [UserController::class, 'register']);
 Route::post('/login', [UserController::class, 'login']);
-Route::get('/email/verify/{id}', [UserController::class, 'verify'])->name('verification.verify'); // Make sure to keep this as your route name
+Route::get('/email/verify/{id}', [UserController::class, 'verifyEmail'])->name('verification.verify'); 
 // Route::get('/email/resend', )->name('verification.resend');
 /*Route::middleware(['auth:sanctum', 'verified'])->get('/user', function () {
   

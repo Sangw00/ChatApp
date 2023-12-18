@@ -1,17 +1,17 @@
 import logo from "./logo.png";
-import Signin from "./Signin";
+import Forgotpassword from "./Forgotpassword";
+import { BrowserRouter, Routes, Route} from "react-router-dom";
 
 export default function Card() {
   return (
     <div className="card container">
         
       <div className="col-sm-6 ">
-        <img src={logo} alt="logo" />
+        <img src={logo} className="logoimg" alt="logo" />
       </div>
-
       <div className="col-sm-6">
-      <Signin/>
-      </div>
+<Forgotpassword/>
+    </div>
     </div>
   );
 }

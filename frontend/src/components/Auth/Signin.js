@@ -1,13 +1,15 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUser, faLock } from "@fortawesome/free-solid-svg-icons";
-import { BrowserRouter, Routes, Route, Link} from "react-router-dom";
 import Signup from "./Signup";
 import Forgotpassword from "./Forgotpassword";
+import { BrowserRouter, Routes, Route, Link} from "react-router-dom";
 
 export default function Signin() {
 
   return (
-  <BrowserRouter><div>
+    
+    <BrowserRouter>
+  <div>
     <div className="main">Sign in</div>
     <form className="form ">
       <div className="input ">
@@ -33,6 +35,9 @@ export default function Signin() {
       <Route path="/Signup" element={<Signup/>} >  </Route>
       </Routes>
     
-  </div>
-  </BrowserRouter>)
+  </div>  
+      </BrowserRouter>
+
+   
+ )
 }
