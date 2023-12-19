@@ -1,5 +1,5 @@
 <?php
-
+//1|Vi6NLdGxfHdkwEMDnAtNUVvSHbrsqAiTzN8ZvuAu932b1815
 namespace App\Http\Controllers;
 use App\Models\User;
 use Illuminate\Http\Request;
@@ -9,6 +9,7 @@ use Illuminate\Http\Response;
 use App\Http\Resources\UserResource;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Auth\Events\Registered;
+use Illuminate\Support\Facades\Mail;
 use App\Mail\RegisterMail;
 
 class UserController extends Controller
@@ -32,12 +33,9 @@ class UserController extends Controller
             'username' => $request->input('username'),
             'email' => $request->input('email'),
             'password' => Hash::make($request->input('password')),
+            'email_verified_at'=> null,
         ]);
-
-        // Send email verification notification
-        
-        $user->sendEmailVerificationNotification();
-
+        Mail::to($user->email)->send(new RegisterMail($user));
         return response()->json(['message' => 'Email verification sent'], 200);
     }
 
@@ -77,7 +75,7 @@ class UserController extends Controller
             ], 401);
         }
     
-        $user = User::where('email', $request['email'])->findOrFail();
+        $user = User::where('email', $request['email'])->find;
         if ($user->remember_token !== $request->header('Authorization')) {
             return response()->json(['message' => 'Invalid token'], 401);
         }

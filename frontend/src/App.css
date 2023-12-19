@@ -66,7 +66,7 @@ input{
   padding-left: 50px;
   font-weight: light;
   align-self: start;
-  : #e91e1e;
+  
 
 }
 p {
@@ -93,7 +93,9 @@ p {
   justify-content: space-around;
   align-items: center;
 }
-::placeholder{}
+::placeholder{
+  color: black;
+}
 /*
 .input{
   background-color: #FCFDF8;
