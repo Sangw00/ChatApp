@@ -24,7 +24,7 @@ position:left;
 }
 .card{
   width: 730px;
-  height: 444px;
+  height: max-content;
   margin: 15% 35% 0 ;
   /* display: grid;
   grid-template-rows:repeat(auto-fill,1fr);
@@ -37,6 +37,14 @@ position:left;
              -5px -5px 10px #ffffff;
 
 }
+.side{
+  margin: 100px 0px 0px 0px;
+}
+.line{
+  box-shadow: 0px 14px 11px 0px rgba(162, 183, 2, 0.979);
+  height: 2px;
+  margin-bottom:5cm;
+}
 .button{
   background-color: #D1CD5B;
   border-radius: 10px;
@@ -44,6 +52,7 @@ position:left;
   width: 122px;
   height: 40;
   color: #ffffff;
+  margin: 20px 0px 20px 0px;
 }
 .form{
 padding-top: 10%;
@@ -80,6 +89,7 @@ p {
 .link{
   color: #D1CD5B;
 }
+
 .sidebar{
   background-color: #F3F5EB;
 }
@@ -114,7 +124,7 @@ p {
     /* Firefox */
     .scroll-bar {
       scrollbar-width: auto;
-      scrollbar-color: #0066ff #6e6464;
+      scrollbar-color: #125d62 #6e6464;
     }
 
     /* Chrome, Edge, and Safari */
@@ -123,7 +133,7 @@ p {
     }
 
     *::-webkit-scrollbar-track {
-      background: #6e6464;
+      background: rgb(85, 137, 137);
     }
 
     *::-webkit-scrollbar-thumb {
