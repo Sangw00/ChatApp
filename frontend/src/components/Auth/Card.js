@@ -1,5 +1,5 @@
 import logo from "./logo.png";
-import VerifyEmail from "./VerifyEmail";
+import Signin from "./Signin";
 import { BrowserRouter, Routes, Route} from "react-router-dom";
 
 export default function Card() {
@@ -10,7 +10,7 @@ export default function Card() {
         <img src={logo} className="logoimg" alt="logo" />
       </div>
       <div className="col-sm-6">
-<VerifyEmail/>
+<Signin/>
     </div>
     </div>
   );

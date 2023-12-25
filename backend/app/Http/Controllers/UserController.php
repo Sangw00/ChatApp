@@ -75,7 +75,7 @@ class UserController extends Controller
             ], 401);
         }
     
-        $user = User::where('email', $request['email'])->find;
+        $user = User::where('email', $request['email'])->firstOrFail();
         if ($user->remember_token !== $request->header('Authorization')) {
             return response()->json(['message' => 'Invalid token'], 401);
         }
