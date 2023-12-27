@@ -55,7 +55,7 @@ class UserController extends Controller
 
     // Generate a token for the user
     $token = $user->createToken('auth_token')->plainTextToken;
-
+$user->save();
     event(new Registered($user));
 
     return response()->json([
