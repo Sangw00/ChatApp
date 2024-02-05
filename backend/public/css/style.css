@@ -1,0 +1,145 @@
+body {
+    text-align: center;
+    background-color: #f6f8ed ;
+    background-size: 100%;
+    /* font-family: "cambo"; */
+    font-size:25px ;
+    font-family:"buda";
+  }
+  .main{
+    font-size: 30px;
+    color: #296066;
+  
+    
+  }
+  .sub{
+    font-size: 27px;
+  }
+  
+  .logoimg{
+  padding-top: 50;
+  width: 355px;
+  height: 444px;
+  position:left;
+  }
+  .card{
+    width: 730px;
+    height: max-content;
+    margin: 15% 35% 0 ;
+    /* display: grid;
+    grid-template-rows:repeat(auto-fill,1fr);
+    grid-template-columns: repeat(2,1fr);
+    gap:10px; */
+    align-content: center;
+    border-radius: 20px;
+    background: #F3F5EB;
+    box-shadow:  5px 5px 10px #94958f,
+               -5px -5px 10px #ffffff;
+  
+  }
+  .side{
+    margin: 100px 0px 0px 0px;
+  }
+  .line{
+    box-shadow: 0px 14px 11px 0px rgba(162, 183, 2, 0.979);
+    height: 2px;
+    margin-bottom:5cm;
+  }
+  .button{
+    background-color: #D1CD5B;
+    border-radius: 10px;
+    border: none;
+    width: 122px;
+    height: 40;
+    color: #ffffff;
+    margin: 20px 0px 20px 0px;
+  }
+  .form{
+  padding-top: 10%;
+  position:initial;
+  }
+  .icon{
+    position:absolute;
+    left:0;
+    padding: 4px 10px 0px 35px;
+    font-size: 40px;
+    color: #296066
+    
+  }
+  input{
+    height:51px;
+    width: 290px;
+    border:1px solid #296066;
+    background-color: transparent;
+    border-radius: 10px;
+    padding-left: 50px;
+    font-weight: light;
+    align-self: start;
+    
+  
+  }
+  p {
+    color:#296066;
+    width:370px;
+    right: 20px;
+    text-align: start;
+    padding: 10px 0px 0px 15px;
+    font-size: 20px;
+  }
+  .link{
+    color: #D1CD5B;
+  }
+  
+  .sidebar{
+    background-color: #F3F5EB;
+  }
+  .chat{
+    background-color: #FCFDF8;
+  }
+  .search{
+    background-color: #296066;
+    height:55px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  ::placeholder{
+    color: black;
+  }
+  /*
+  .input{
+    background-color: #FCFDF8;
+    border-radius: 10px;
+    height: 38px;
+     margin-top: 10px;
+  }
+  .logo{
+    margin: 0%;
+    height: 150px;;
+    width: 333;
+  }
+  /**/
+  
+      /* ===== Scrollbar CSS ===== */
+      /* Firefox */
+     /* .scroll-bar {
+        scrollbar-width: auto;
+        scrollbar-color: #125d62 #6e6464;
+      }*/
+  
+      /* Chrome, Edge, and Safari */
+     /* *::-webkit-scrollbar {
+        width: 16px;
+      }*/
+  
+      /*::-webkit-scrollbar-track {
+        background: rgb(85, 137, 137);
+      }*/
+  
+     /*::-webkit-scrollbar-thumb {
+        background-color: #0066ff;
+        border-radius: 10px;
+        border: 3px solid #ffffff;
+      }*/
+    
+                  

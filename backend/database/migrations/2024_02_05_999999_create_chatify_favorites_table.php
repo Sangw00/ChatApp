@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-return new class extends Migration
+class CreateChatifyFavoritesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,11 +13,10 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('messages', function (Blueprint $table) {
-            $table->id();
-            $table->string("message")->max(255);
-            $table->id("from_id");
-            $table->id("to_id");
+        Schema::create('ch_favorites', function (Blueprint $table) {
+            $table->uuid('id')->primary();
+            $table->bigInteger('user_id');
+            $table->bigInteger('favorite_id');
             $table->timestamps();
         });
     }
@@ -29,6 +28,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('messages');
+        Schema::dropIfExists('ch_favorites');
     }
-};
+}

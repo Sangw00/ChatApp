@@ -74,16 +74,11 @@ $user->save();
                 'message' => 'Invalid login details'
             ], 401);
         }
-    
-        $user = User::where('email', $request['email'])->firstOrFail();
-        if ($user->remember_token !== $request->header('Authorization')) {
-            return response()->json(['message' => 'Invalid token'], 401);
-        }
-    
+else{
         return response()->json([
-            'message' => 'User registered successfully',
+            'message' => 'hello' . $request->username,
             'status' => Response::HTTP_OK
-        ]);
+        ]);}
     } 
 
 }

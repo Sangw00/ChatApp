@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use  App\Http\Controllers\vendor\Chatify\MessagesController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -15,4 +15,13 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('welcome');
+});
+
+
+Auth::routes();
+
+Route::middleware('auth')->group(function () {
+
+Route::get('/{?id}', [App\Http\Controllers\vendor\Chatify\MessagesController::class, 'index']);    
+
 });
